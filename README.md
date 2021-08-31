@@ -77,7 +77,7 @@ misMatchThreshold        // Percentage of different pixels allowed to pass test
 requireSameDimensions    // If set to true -- any change in selector size will trigger a test failure.
 viewports                // An array of screen size objects your DOM will be tested against. This configuration will override the viewports property assigned at the config root.
 ```
-### Test exaples for reference
+### Test examples for reference
 
 ```
  "scenarios": [
