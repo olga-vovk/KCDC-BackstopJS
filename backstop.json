@@ -21,7 +21,7 @@
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
     {
-      "label": "Nelson Atkins Museum of Art Homepage",
+      "label": "Homepage",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
       "url": "https://www.nelson-atkins.org/",
       "referenceUrl": "",
@@ -29,6 +29,44 @@
       "readySelector": "",
       "delay": 0,
       "hideSelectors": [],
+      "removeSelectors": [".loop-video"],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Header and footer tests",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://www.nelson-atkins.org/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": ".nama-nav__main",
+      "delay": 1000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [".nama-nav__main", ".nama-footer"],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 1.0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Art course hidden images",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://nelson-atkins.org/art-course/?utm_source=website&utm_medium=when-you-arrive&utm_campaign=plan-your-visit&utm_id=art-course",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": ["img"],
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "",
@@ -38,6 +76,56 @@
       "expect": 0,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
+    },
+    {
+      "label": "Menu item hovered test",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://www.nelson-atkins.org/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": ".nama-nav__main",
+      "delay": 1000,
+      "hideSelectors": [],
+      "hoverSelector": ".nama-nav__menu>li:nth-child(1)",
+      "clickSelector": "",
+      "postInteractionWait": 2000,
+      "selectors": [".nama-nav__main"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1600,
+          "height": 1024
+        }
+      ]
+    },
+    {
+      "label": "Menu item expanded test",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://www.nelson-atkins.org/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": ".nama-nav__main",
+      "delay": 1000,
+      "hideSelectors": [],
+      "removeSelectors": [".loop-video"],
+      "clickSelector": ".nama-nav__menu>li:nth-child(1)>a",
+      "postInteractionWait": 3000,
+      "selectors": [".nama-nav__dropdown"],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold" : 1.0,
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1600,
+          "height": 1024
+        }
+      ]
     }
   ],
   "paths": {

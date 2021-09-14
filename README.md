@@ -26,6 +26,10 @@ Note: Always run reference images with --docker flag.
 ```
 backstop test --filter 'Scenario label here'
 ```
+### Run a specific config file
+```
+--config="backstop_smoke.json"
+```
 
 ### Approve new baseline
 This will take the screenshots from your tests and puth them into the bitmap_reference folder. If you do so, make sure that the tests were iexecuted with --docker flag.
