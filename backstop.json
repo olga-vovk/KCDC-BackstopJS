@@ -126,6 +126,31 @@
           "height": 1024
         }
       ]
+    },
+    {
+      "label": "Login test",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://cart.nelson-atkins.org/account/login",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "onReadyScript": "puppet/login.js",
+      "readySelector": "",
+      "delay": 1000,
+      "hideSelectors": [],
+      "clickSelector": "",
+      "postInteractionWait": 3000,
+      "selectors": [],
+      "selectorExpansion": false,
+      "expect": 0,
+      "misMatchThreshold" : 1.0,
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1600,
+          "height": 1024
+        }
+      ]
     }
   ],
   "paths": {
